@@ -21,8 +21,8 @@
     <header class="header">
         <div class="main-header">
             <div class="principal-image container" id="principal-image">
-                <img class="bottom" src="resources/home-bg.jpg" alt="Home background image ">
-                <img class="top" src="resources/home-bg-2.jpg" alt="Home background image ">
+                <img class="hero-image bottom" src="resources/home-bg.jpg" alt="Home background image ">
+                <img class="hero-image top" src="resources/home-bg-2.jpg" alt="Home background image ">
                 <div class="header-container">
                     <h1 class="title-page">Genius web & Talos inc</h1>
                     <p class="description">
@@ -32,8 +32,8 @@
                         neque iusto cumque earum inventore sapiente necessitatibus
                         a dolor.
                     </p>
-                    <a href="#about-section" type="button" class="cta-learn">LEARN MORE</a>
-                    <a href="#contact-section" type="button" class="cta-contact">CONTACT US</a>
+                    <a href="#about-section" type="button" class="cta-learn image-buttom">LEARN MORE</a>
+                    <a href="#contact-section" type="button" class="cta-contact image-buttom">CONTACT US</a>
                 </div>
             </div>
         </div>
@@ -41,10 +41,10 @@
         <div class="menu">
             <div class="container-header">
                 <h2><a href="index.html" class="talos">Talos</a></h2>
-                <nav>
+                <nav class="nav-container">
                     <ul class="nav-menu">
-                        <li id="one" class="nav-item active"><a href="#principal-images">Home</a></li>
-                        <li id="two" class="nav-item"><a href="#top-section">Services</a></li>
+                        <li id="one" class="nav-item active"><a href="#principal-image" class="nav-link">Home</a></li>
+                        <li id="two" class="nav-item"><a href="#top-section" class="nav-link">Services</a></li>
                         <li id="three" class="nav-item"><a href="#about-section" class="nav-link">About</a></li>
                         <li id="four" class="nav-item"><a href="#team-section" class="nav-link">Team</a></li>
                         <li id="five" class="nav-item"><a href="#portfolio-section" class="nav-link">Portfolio</a></li>
@@ -70,32 +70,40 @@
                 <div class="top-section-container">
                     <div class="content-colum1">
                         <div class="description-content-brand">
-                            <h2 class="content-title"><span class="icon-laptop"></span>Brand identity</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ducimus quam eius
-                                illo,asdsadsadsadsadsadasczxcz sadsadsa zx sdsad
+                            <h3 class="content-title"><span class="top-section-icon icon-laptop"></span>Brand identity
+                            </h3>
+                            <p class="top-content-text content-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Animi ducimus quam eius illo. Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Delectus iusto pariatur cupiditate voluptatum sed labore nobis repellat velit
+                                officiis accusantium provident, nihil rem sit? Dicta excepturi autem magnam animi culpa?
                             </p>
                         </div>
                         <div class="description-content-focus">
-                            <h2 class="content-title"><span class="icon-focus"></span>Web design</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ducimus quam eius
-                                illo,asdsadsadsadsadsadasczxcz sadsadsa zx sdsad
+                            <h3 class="content-title"><span class="top-section-icon icon-focus"></span>Web design</h3>
+                            <p class="top-content-text content-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Animi ducimus quam eius illo. Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Delectus iusto pariatur cupiditate voluptatum sed labore nobis repellat velit
+                                officiis accusantium provident, nihil rem sit? Dicta excepturi autem magnam animi culpa?
                             </p>
                         </div>
                     </div>
                     <div class="content-colum2">
                         <div class="description-content-cloud">
-                            <h2 class="content-title"><span class="icon-cloud"></span>Social marketing</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ducimus quam eius
-                                illo,asdsadsadsadsadsadasczxcz sadsadsa zx sdsad
+                            <h3 class="content-title"><span class="top-section-icon icon-cloud"></span>Social marketing
+                            </h3>
+                            <p class="top-content-text content-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Animi ducimus quam eius illo. Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Delectus iusto pariatur cupiditate voluptatum sed labore nobis repellat velit
+                                officiis accusantium provident, nihil rem sit? Dicta excepturi autem magnam animi culpa?
                             </p>
                         </div>
                         <div class="description-content-cms">
-                            <h2 class="content-title"><span class="icon-basket"></span>CMS & eCommerce</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ducimus quam eius
-                                illo,asdsadsadsadsadsadasczxcz sadsadsa zx sdsad
+                            <h3 class="content-title"><span class="top-section-icon icon-basket"></span>CMS & eCommerce
+                            </h3>
+                            <p class="top-content-text content-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Animi ducimus quam eius illo. Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Delectus iusto pariatur cupiditate voluptatum sed labore nobis repellat velit
+                                officiis accusantium provident, nihil rem sit? Dicta excepturi autem magnam animi culpa?
                             </p>
                         </div>
                     </div>
@@ -139,41 +147,41 @@
                 </div>
                 <div class="team-botton">
                     <div class="team-item">
-                        <img src="resources/team_1.jpg" alt="Johnathan Doe Photo">
-                        <h2>Johnathan Doe</h2>
-                        <p>Designer</p>
+                        <img class="team-image" src="resources/team_1.jpg" alt="Johnathan Doe Photo">
+                        <h3 class="team-name">Johnathan Doe</h3>
+                        <p class="team-text">Designer</p>
                         <div class="image-labels">
                             <div class="image-icons">
-                                <a href="#"><span class="icon-facebook"></span></a>
-                                <a href="#"><span class="icon-twitter"></span></a>
-                                <a href="#"><span class="icon-dribbble"></span></a>
-                                <a href="#"><span class="icon-linkedin"></span></a>
+                                <a href="#" class="icon-link"><span class="team-icon icon-facebook"></span></a>
+                                <a href="#" class="icon-link"><span class="team-icon icon-twitter"></span></a>
+                                <a href="#" class="icon-link"><span class="team-icon icon-dribbble"></span></a>
+                                <a href="#" class="icon-link"><span class="team-icon icon-linkedin"></span></a>
                             </div>
                         </div>
                     </div>
                     <div class="team-item">
-                        <img src="resources/team_2.jpg" alt="Jenny Martian Photo">
-                        <h2>Jenny L Martian</h2>
-                        <p>UX Designer</p>
+                        <img class="team-image" src="resources/team_2.jpg" alt="Jenny Martian Photo">
+                        <h3 class="team-name">Jenny L Martian</h3>
+                        <p class="team-text">UX Designer</p>
                         <div class="image-labels">
                             <div class="image-icons">
-                                <a href="#"><span class="icon-facebook"></span></a>
-                                <a href="#"><span class="icon-twitter"></span></a>
-                                <a href="#"><span class="icon-dribbble"></span></a>
-                                <a href="#"><span class="icon-linkedin"></span></a>
+                                <a href="#" class="icon-link"><span class="team-icon icon-facebook"></span></a>
+                                <a href="#" class="icon-link"><span class="team-icon icon-twitter"></span></a>
+                                <a href="#" class="icon-link"><span class="team-icon icon-dribbble"></span></a>
+                                <a href="#" class="icon-link"><span class="team-icon icon-linkedin"></span></a>
                             </div>
                         </div>
                     </div>
                     <div class="team-item">
-                        <img src="resources/team_3.jpg" alt="James Doe Photo">
-                        <h2>James David Doe</h2>
-                        <p>Creative Director</p>
+                        <img class="team-image" src="resources/team_3.jpg" alt="James Doe Photo">
+                        <h3 class="team-name">James David Doe</h3>
+                        <p class="team-text">Creative Director</p>
                         <div class="image-labels">
                             <div class="image-icons">
-                                <a href="#"><span class="icon-facebook"></span></a>
-                                <a href="#"><span class="icon-twitter"></span></a>
-                                <a href="#"><span class="icon-dribbble"></span></a>
-                                <a href="#"><span class="icon-linkedin"></span></a>
+                                <a href="#" class="icon-link"><span class="team-icon icon-facebook"></span></a>
+                                <a href="#" class="icon-link"><span class="team-icon icon-twitter"></span></a>
+                                <a href="#" class="icon-link"><span class="team-icon icon-dribbble"></span></a>
+                                <a href="#" class="icon-link"><span class="team-icon icon-linkedin"></span></a>
                             </div>
                         </div>
                     </div>
@@ -187,51 +195,51 @@
             </div>
             <div class="portfolio-area">
                 <div class="single-portfolio">
-                    <img src="resources/portfolio-img1.jpg" alt="First ilustration gallery">
+                    <img class="portfolio-image" src="resources/portfolio-img1.jpg" alt="First ilustration gallery">
                     <div class="portfolio-text">
-                        <a href="#"><i class="icon-googleplus"></i></a>
-                        <h2>Illustration</h2>
-                        <p>Graphic / Illustration / poster</p>
+                        <a class="link-portfolio" href="#"><i class="portfolio-icon icon-googleplus"></i></a>
+                        <p class="illustration-name">Illustration</p>
+                        <p class="illustration-description">Graphic / Illustration / poster</p>
                     </div>
                 </div>
                 <div class="single-portfolio">
-                    <img src="resources/portfolio-img2.jpg" alt="Second ilustration gallery">
+                    <img class="portfolio-image" src="resources/portfolio-img2.jpg" alt="Second ilustration gallery">
                     <div class="portfolio-text">
-                        <a href="#"><i class="icon-googleplus"></i></a>
-                        <h2>Illustration</h2>
-                        <p>Graphic / Illustration / poster</p>
+                        <a class="link-portfolio" href="#"><i class="portfolio-icon icon-googleplus"></i></a>
+                        <p class="illustration-name">Illustration</p>
+                        <p class="illustration-description">Graphic / Illustration / poster</p>
                     </div>
                 </div>
                 <div class="single-portfolio">
-                    <img src="resources/portfolio-img3.jpg" alt="Third ilustration gallery">
+                    <img class="portfolio-image" src="resources/portfolio-img3.jpg" alt="Third ilustration gallery">
                     <div class="portfolio-text">
-                        <a href="#"><i class="icon-googleplus"></i></a>
-                        <h2>Illustration</h2>
-                        <p>Graphic / Illustration / poster</p>
+                        <a class="link-portfolio" href="#"><i class="portfolio-icon icon-googleplus"></i></a>
+                        <p class="illustration-name">Illustration</p>
+                        <p class="illustration-description">Graphic / Illustration / poster</p>
                     </div>
                 </div>
                 <div class="single-portfolio">
-                    <img src="resources/portfolio-img4.jpg" alt="Quarter ilustration gallery">
+                    <img class="portfolio-image" src="resources/portfolio-img4.jpg" alt="Quarter ilustration gallery">
                     <div class="portfolio-text">
-                        <a href="#"><i class="icon-googleplus"></i></a>
-                        <h2>Illustration</h2>
-                        <p>Graphic / Illustration / poster</p>
+                        <a class="link-portfolio" href="#"><i class="portfolio-icon icon-googleplus"></i></a>
+                        <p class="illustration-name">Illustration</p>
+                        <p class="illustration-description">Graphic / Illustration / poster</p>
                     </div>
                 </div>
                 <div class="single-portfolio">
-                    <img src="resources/portfolio-img5.jpg" alt="Fifth ilustration gallery">
+                    <img class="portfolio-image" src="resources/portfolio-img5.jpg" alt="Fifth ilustration gallery">
                     <div class="portfolio-text">
-                        <a href="#"><i class="icon-googleplus"></i></a>
-                        <h2>Illustration</h2>
-                        <p>Graphic / Illustration / poster</p>
+                        <a class="link-portfolio" href="#"><i class="portfolio-icon icon-googleplus"></i></a>
+                        <p class="illustration-name">Illustration</p>
+                        <p class="illustration-description">Graphic / Illustration / poster</p>
                     </div>
                 </div>
                 <div class="single-portfolio">
-                    <img src="resources/portfolio-img6.jpg" alt="Sixth ilustration gallery">
+                    <img class="portfolio-image" src="resources/portfolio-img6.jpg" alt="Sixth ilustration gallery">
                     <div class="portfolio-text">
-                        <a href="#"><i class="icon-googleplus"></i></a>
-                        <h2>Illustration</h2>
-                        <p>Graphic / Illustration / poster</p>
+                        <a class="link-portfolio" href="#"><i class="portfolio-icon icon-googleplus"></i></a>
+                        <p class="illustration-name">Illustration</p>
+                        <p class="illustration-description">Graphic / Illustration / poster</p>
                     </div>
                 </div>
             </div>
@@ -244,37 +252,37 @@
                 </div>
                 <div class="blog-content">
                     <div class="blog-content-items">
-                        <div class="items-content">
-                            <h2>Online Business / dec 9, 2016</h2>
-                            <h3>The best way to make Online Bussines</h3>
-                            <p>By johnatan Doe</p>
+                        <div class="items-content ">
+                            <p class="blog-content-title">Online Business / dec 9, 2016</p>
+                            <p class="blog-content-description">The best way to make Online Bussines</p>
+                            <p class="blog-content-by">By johnatan Doe</p>
 
                         </div>
-                        <img src="resources/hover-image.jpg" alt="Content background image ">
+                        <img class="blog-image" src="resources/hover-image.jpg" alt="Content background image ">
                     </div>
                     <div class="blog-content-items">
                         <div class="items-content">
-                            <h2>Front End Dev / Dec 9, 2016</h2>
-                            <h3>Front End Developer Vs UI Designer</h3>
-                            <p>By Johnny James</p>
+                            <p class="blog-content-title">Front End Dev / Dec 9, 2016</p>
+                            <p class="blog-content-description">Front End Developer Vs UI Designer</p>
+                            <p class="blog-content-by">By Johnny James</p>
                         </div>
-                        <img src="resources/hover-image.jpg" alt="Content background image ">
+                        <img class="blog-image" src="resources/hover-image.jpg" alt="Content background image ">
                     </div>
                     <div class="blog-content-items">
                         <div class="items-content">
-                            <h2>Social Marketing / Dec 9, 2016</h2>
-                            <h3>What is Social Marketing Business</h3>
-                            <p>By Mary Louis</p>
+                            <p class="blog-content-title">Social Marketing / Dec 9, 2016</p>
+                            <p class="blog-content-description">What is Social Marketing Business</p>
+                            <p class="blog-content-by">By Mary Louis</p>
                         </div>
-                        <img src="resources/hover-image.jpg" alt="Content background image ">
+                        <img class="blog-image" src="resources/hover-image.jpg" alt="Content background image ">
                     </div>
                     <div class="blog-content-items">
                         <div class="items-content">
-                            <h2>Web Design / dec 9, 2016</h2>
-                            <h3>How to become Web Designer</h3>
-                            <p>By David Jenn</p>
+                            <p class="blog-content-title">Web Design / dec 9, 2016</p>
+                            <p class="blog-content-description">How to become Web Designer</p>
+                            <p class="blog-content-by">By David Jenn</p>
                         </div>
-                        <img src="resources/hover-image.jpg" alt="Content background image ">
+                        <img class="blog-image" src="resources/hover-image.jpg" alt="Content background image ">
                     </div>
                 </div>
             </div>
@@ -287,7 +295,8 @@
                 </div>
                 <div class="accordion-content">
                     <div class="block active">
-                        <h2 class="block-title"><span class="icon-laptop"></span> How to make Brand Identity?</h2>
+                        <h3 class="block-title"><span class="question-icon icon-laptop"></span> How to make Brand
+                            Identity?</h3>
                         <p class="block-content">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, iure
                             eius sunt quam porro facere enim architecto officiis facilis minima nemo consequuntur velit
@@ -297,7 +306,7 @@
                         </p>
                     </div>
                     <div class="block">
-                        <h2 class="block-title"><span class="icon-focus"></span> What is Web Design?</h2>
+                        <h3 class="block-title"><span class="question-icon icon-focus"></span> What is Web Design?</h3>
                         <p class="block-content">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, iure
                             eius sunt quam porro facere enim architecto officiis facilis minima nemo consequuntur velit
@@ -308,7 +317,8 @@
                         </p>
                     </div>
                     <div class="block">
-                        <h2 class="block-title"><span class="icon-cloud"></span>Why Important Social Marketing?</h2>
+                        <h3 class="block-title"><span class="question-icon icon-cloud"></span>Why Important Social
+                            Marketing?</h3>
                         <p class="block-content">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, iure
                             eius sunt quam porro facere enim architecto officiis facilis minima nemo consequuntur velit
@@ -332,7 +342,8 @@
                         <div id="testimonial-slider" class="owl-carousel">
                             <div class="testimonial">
                                 <div class="picure">
-                                    <img src="resources/testimonial-img3.jpg" alt="James Author Photo">
+                                    <img class="testimonial-image" src="resources/testimonial-img3.jpg"
+                                        alt="James Author Photo">
                                 </div>
                                 <p class="description">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada vulputate
@@ -345,7 +356,8 @@
                             </div>
                             <div class="testimonial">
                                 <div class="picure">
-                                    <img src="resources/testimonial-img1.jpg" alt="Jhon Doe Photo">
+                                    <img class="testimonial-image" src="resources/testimonial-img1.jpg"
+                                        alt="Jhon Doe Photo">
                                 </div>
                                 <p class="description">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada vulputate
@@ -358,7 +370,8 @@
                             </div>
                             <div class="testimonial">
                                 <div class="picure">
-                                    <img src="resources/testimonial-img2.jpg" alt="Jenny Martian Photo">
+                                    <img class="testimonial-image" src="resources/testimonial-img2.jpg"
+                                        alt="Jenny Martian Photo">
                                 </div>
                                 <p class="description">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada vulputate
@@ -379,14 +392,17 @@
                 <div>
                     <div class="wrapper">
                         <h2 class="section-title">Get In Touch</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="wrapper-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                    <form class="myForm">
-                        <input type="text" name="customer_name" id="customer_name" required placeholder="Name">
-                        <input type="email" name="email_address" id="email_address" placeholder="Email">
-                        <input type="tel" name="phone" id="phone" placeholder="Phone">
+                    <form class="my-form">
+                        <input class="contact-input" type="text" name="customer_name" id="customer_name" required
+                            placeholder="Name">
+                        <input class="contact-input" type="email" name="email_address" id="email_address"
+                            placeholder="Email">
+                        <input class="contact-input" type="tel" name="phone" id="phone" placeholder="Phone">
                         <div class="comment-box">
-                            <textarea name="comments" id="comments" maxlength="500" placeholder="Message"></textarea>
+                            <textarea class="contact-textarea" name="comments" id="comments" maxlength="500"
+                                placeholder="Message"></textarea>
                         </div>
                     </form>
                     <div class="form-button">
@@ -398,7 +414,7 @@
     </main>
     <section id="footer" class="footer">
         <div class="footer container">
-            <h2><b>Copyright © 2021 Talos HTML Template. All rights reserved</b></h2>
+            <h2 class="footer-text">Copyright © 2021 Talos HTML Template. All rights reserved</h2>
             <div class="social-icon">
                 <div class="social-item">
                     <a href="#"><span class="icon-facebook"></span></a>
