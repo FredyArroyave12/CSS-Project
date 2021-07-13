@@ -1,6 +1,6 @@
 // testimonail
-$(document).ready(function () {
-  $('#testimonial-slider').owlCarousel({
+$(document).ready(() => {
+  $('.owl-carousel').owlCarousel({
     items: 2,
     itemsDesktop: [1000, 2],
     itemsDesktopSmall: [990, 2],
@@ -17,9 +17,9 @@ $(document).ready(function () {
 const block = document.querySelectorAll('.block');
 const blockTitle = document.querySelectorAll('.block-title');
 
-blockTitle.forEach((allh2, index) => {
+blockTitle.forEach((allHead, index) => {
   blockTitle[index].addEventListener('click', () => {
-    block.forEach((allblock, index) => {
+    block.forEach((allBlock, index) => {
       block[index].classList.remove('active');
     });
     block[index].classList.add('active');
@@ -27,10 +27,10 @@ blockTitle.forEach((allh2, index) => {
 });
 
 // sticky
-$(document).ready(function () {
+$(document).ready(() => {
   let height = $('.menu').offset().top;
 
-  $(window).on('scroll', function () {
+  $(window).on('scroll', () => {
     if ($(window).scrollTop() > height) {
       $('.menu').addClass('menu-fixed');
     } else {
@@ -44,7 +44,7 @@ $(document).ready(function () {
 const navItem = document.querySelectorAll('.nav-item');
 
 navItem.forEach((item, index) => {
-  navItem[i].addEventListener('click', () => {
+  navItem[index].addEventListener('click', () => {
     navItem.forEach((item, index) => {
       navItem[index].classList.remove('active');
     });
@@ -85,12 +85,12 @@ function resizeIframe(object) {
     object.contentWindow.document.documentElement.scrollHeight + 'px';
 }
 
-// pagionas
-$(document).ready(function () {
+// paginas
+$(document).ready(() => {
   let principalImage = $('.principal-images').offset().top;
-  let descriptions = $('.descriptions').offset().top;
+  let descriptions = $('.top-section').offset().top;
 
-  $(window).on('scroll', function () {
+  $(window).on('scroll', () => {
     if (
       $(window).scrollTop() > principalImage &&
       $(window).scrollTop() < descriptions
@@ -103,7 +103,7 @@ $(document).ready(function () {
   //team JS
   let teamSection = $('.team-section').offset().top;
 
-  $(window).on('scroll', function () {
+  $(window).on('scroll', () => {
     if (
       $(window).scrollTop() > descriptions &&
       $(window).scrollTop() < teamSection
@@ -114,9 +114,9 @@ $(document).ready(function () {
     }
   });
 
-  let portafolio = $('.portfolio-section').offset().top;
+  let portafolio = $('.gallery').offset().top;
 
-  $(window).on('scroll', function () {
+  $(window).on('scroll', () => {
     if (
       $(window).scrollTop() > teamSection &&
       $(window).scrollTop() < portafolio
@@ -129,9 +129,9 @@ $(document).ready(function () {
     }
   });
 
-  let blog = $('.our-blog-section').offset().top;
+  let blog = $('.blog-section').offset().top;
 
-  $(window).on('scroll', function () {
+  $(window).on('scroll', () => {
     if ($(window).scrollTop() > portafolio && $(window).scrollTop() < blog) {
       $('#five').addClass('active');
     } else {
@@ -141,7 +141,7 @@ $(document).ready(function () {
 
   let form = $('.form-section').offset().top;
 
-  $(window).on('scroll', function () {
+  $(window).on('scroll', () => {
     if ($(window).scrollTop() > blog && $(window).scrollTop() < form) {
       $('#six').addClass('active');
     } else {
@@ -149,7 +149,7 @@ $(document).ready(function () {
     }
   });
 
-  $(window).on('scroll', function () {
+  $(window).on('scroll', () => {
     if ($(window).scrollTop() > form) {
       $('#seven').addClass('active');
     } else {

@@ -148,6 +148,8 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 80%;
+  margin: auto;
 }
 .container-header .talos {
   text-decoration: none;
@@ -159,15 +161,12 @@ p {
 .talos:hover {
   color: var(--hoverAqua);
 }
-.menu {
-  transition: all ease 0.2s;
-}
+
 .nav-container .nav-menu {
   list-style: none;
   overflow: hidden;
 }
 .container-header .nav-menu {
-  float: left;
   display: flex;
   align-content: space-between;
   align-items: center;
@@ -226,7 +225,6 @@ p {
   margin: 0 auto;
 }
 .introduction-top {
-  width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -235,6 +233,7 @@ p {
   padding: 40px;
   padding-bottom: 0;
   margin-top: 50px;
+  width: 85%;
 }
 .top-section .top-section-container {
   display: flex;
@@ -315,22 +314,25 @@ p {
   justify-content: space-between;
   margin: auto;
   margin-bottom: 70px;
+
   background-color: var(--greyBackground);
 }
 .genius-studio-content {
-  width: auto;
+  width: 40%;
   height: auto;
   margin: auto;
-  margin-right: 40px;
-  padding: 20px;
+  margin-left: 10%;
+
   text-align: justify;
   overflow: hidden;
+  word-wrap: break-Word;
 }
+
 .frame {
   width: auto;
   height: auto;
   margin: auto;
-  padding: 20px;
+  margin-right: 10%;
 }
 .frame .iframe-content {
   width: 500px;
@@ -342,9 +344,9 @@ p {
 .team-section .team {
   flex-direction: column;
   text-align: center;
-  width: auto;
+  width: 85%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 50px 0;
 }
 .team-section .team-top {
   max-width: 500px;
@@ -356,14 +358,9 @@ p {
   justify-items: center;
   flex-wrap: nowrap;
   margin-top: 50px;
-  flex-basis: 80%;
   justify-content: space-between;
-
   padding: 30px;
   border-radius: 10px;
-  margin: 0;
-  margin-left: 50px;
-  margin-right: 50px;
 }
 .team-section .team-item {
   padding: 10px;
@@ -429,15 +426,18 @@ p {
   background: var(--greyBackground);
   padding-bottom: 50px;
 }
+.portfolio-top .section-title {
+  margin-top: 40px;
+}
 .portfolio-area {
   display: flex;
-  width: 90%;
+  width: 95%;
   justify-content: center;
   flex-wrap: wrap;
 }
 .single-portfolio {
   width: 45vh;
-  height: 350px;
+  height: 380px;
   margin: 20px;
   padding: 24px;
   background: var(--white);
@@ -523,11 +523,13 @@ p {
 .blog-section .blog-container {
   flex-direction: column;
   text-align: center;
+  width: 85%;
   max-width: 1500px;
   margin: 0 auto;
 }
 .blog-section .blog-top {
   text-align: center;
+  margin-top: 40px;
   margin-bottom: 40px;
   max-width: 500px;
 }
@@ -600,11 +602,12 @@ p {
   align-items: center;
   justify-items: center;
   flex-wrap: wrap;
-  flex-basis: 80%;
+  flex-basis: auto;
   justify-content: space-between;
   padding: 30px;
   border-radius: 10px;
   margin: 50px 40px 40px 40px;
+  width: 85%;
 }
 .accordion .block {
   background-color: var(--white);
@@ -640,6 +643,8 @@ p {
   justify-content: center;
   margin-top: 70px;
   margin-bottom: 70px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .testimonial-top {
   display: flex;
@@ -687,14 +692,14 @@ p {
   color: var(--hoverAqua);
   font-style: italic;
 }
-.owl-theme .owl-controls .owl-page span {
+.owl-theme .owl-controls .owl-page .pagination-span {
   border: 2px solid var(--hoverAqua);
   background: var(--white);
   border-radius: 50%;
   opacity: 1;
 }
-.owl-theme .owl-controls .owl-page.active span,
-.owl-theme .owl-controls .owl-page:hover span {
+.owl-theme .owl-controls .owl-page.active .pagination-span,
+.owl-theme .owl-controls .owl-page:hover .pagination-span {
   background: var(--hoverAqua);
   border-color: var(--hoverAqua);
 }
@@ -868,6 +873,7 @@ p {
   }
   .genius-studio {
     display: flex;
+    flex-wrap: wrap;
     align-content: center;
     align-items: center;
     flex-direction: column;
@@ -876,14 +882,11 @@ p {
     background-color: var(--greyBackground);
   }
   .genius-studio-content {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    margin-top: 50px;
     margin-bottom: 20px;
   }
-  .frame {
-    height: auto;
+  .iframe-content {
+    height: 300px;
     width: auto;
   }
   .testimonial {
@@ -898,12 +901,27 @@ p {
 }
 
 @media only screen and (max-width: 893px) {
+  .genius-studio-content .genius-title {
+    text-align: center;
+  }
   .frame .iframe-content {
     width: 60vw;
-    height: 20vw;
+    height: 40vw;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 768px) {
+  .top-section .top-section-container {
+    padding: 0;
+  }
+  .top-section-container {
+    margin: 50px;
+    text-align: justify;
+  }
+  .top-content-text {
+    width: 200px;
+    text-align: left;
+  }
+
   #team-section .team {
     display: flex;
     flex-direction: column;
@@ -911,12 +929,12 @@ p {
     padding: 0;
   }
   #team-section .team-botton {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-items: center;
     flex-wrap: wrap;
     margin-top: 50px;
-    flex-basis: 80%;
     justify-content: center;
     padding: 30px;
     border-radius: 10px;
@@ -947,6 +965,11 @@ p {
   .principal-image .cta-contact {
     display: none;
   }
+
+  .top-section .top-section-container {
+    display: block;
+  }
+
   .top-section-container {
     margin: 50px;
     text-align: justify;
@@ -954,6 +977,13 @@ p {
   .top-content-text {
     width: 300px;
     text-align: left;
+  }
+  .genius-studio-content {
+    width: auto;
+    text-align: justify;
+  }
+  .genius-studio-content .genius-title {
+    text-align: justify;
   }
   #team-section .team-botton {
     display: flex;
