@@ -3,8 +3,8 @@ $(document).ready(() => {
   $('.owl-carousel').owlCarousel({
     items: 2,
     itemsDesktop: [1000, 2],
-    itemsDesktopSmall: [990, 2],
-    itemsTablet: [768, 1],
+    itemsDesktopSmall: [769, 2],
+    itemsTablet: [567, 1],
     pagination: true,
     navigation: false,
     navigationText: ['', ''],
@@ -25,7 +25,6 @@ blockTitle.forEach((allHead, index) => {
     block[index].classList.add('active');
   });
 });
-
 // sticky
 $(document).ready(() => {
   let height = $('.menu').offset().top;
@@ -35,8 +34,8 @@ $(document).ready(() => {
       $('.menu').addClass('menu-fixed');
     } else {
       $('.menu').removeClass('menu-fixed');
-      $('.nav-menu').removeClass('active');
-      $('.hamburguer').removeClass('active');
+      //$('.nav-menu').removeClass('active');
+      //$('.hamburguer').removeClass('active');
     }
   });
 });
@@ -56,9 +55,9 @@ navItem.forEach((item, index) => {
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
-hamburger.addEventListener('click', mobileTabMenu);
+hamburger.addEventListener('click', mobileMenu);
 
-function mobileTabMenu() {
+function mobileMenu() {
   hamburger.classList.toggle('active');
   navMenu.classList.toggle('active');
 }
@@ -71,89 +70,11 @@ function closeMenu() {
   hamburger.classList.remove('active');
   navMenu.classList.remove('active');
 }
-
-const contact = document.querySelector('.button2');
+// visited
+const contact = document.querySelector('.cta-contact');
 
 contact.addEventListener('click', visited);
 
 function visited() {
   contact.classList.add('visited');
 }
-
-function resizeIframe(object) {
-  object.style.height =
-    object.contentWindow.document.documentElement.scrollHeight + 'px';
-}
-
-// paginas
-$(document).ready(() => {
-  let principalImage = $('.principal-images').offset().top;
-  let descriptions = $('.top-section').offset().top;
-
-  $(window).on('scroll', () => {
-    if (
-      $(window).scrollTop() > principalImage &&
-      $(window).scrollTop() < descriptions
-    ) {
-      $('#one').addClass('active');
-    } else {
-      $('#one').removeClass('active');
-    }
-  });
-  //team JS
-  let teamSection = $('.team-section').offset().top;
-
-  $(window).on('scroll', () => {
-    if (
-      $(window).scrollTop() > descriptions &&
-      $(window).scrollTop() < teamSection
-    ) {
-      $('#two').addClass('active');
-    } else {
-      $('#two').removeClass('active');
-    }
-  });
-
-  let portafolio = $('.gallery').offset().top;
-
-  $(window).on('scroll', () => {
-    if (
-      $(window).scrollTop() > teamSection &&
-      $(window).scrollTop() < portafolio
-    ) {
-      $('#three').addClass('active');
-      $('#four').addClass('active');
-    } else {
-      $('#three').removeClass('active');
-      $('#four').removeClass('active');
-    }
-  });
-
-  let blog = $('.blog-section').offset().top;
-
-  $(window).on('scroll', () => {
-    if ($(window).scrollTop() > portafolio && $(window).scrollTop() < blog) {
-      $('#five').addClass('active');
-    } else {
-      $('#five').removeClass('active');
-    }
-  });
-
-  let form = $('.form-section').offset().top;
-
-  $(window).on('scroll', () => {
-    if ($(window).scrollTop() > blog && $(window).scrollTop() < form) {
-      $('#six').addClass('active');
-    } else {
-      $('#six').removeClass('active');
-    }
-  });
-
-  $(window).on('scroll', () => {
-    if ($(window).scrollTop() > form) {
-      $('#seven').addClass('active');
-    } else {
-      $('#seven').removeClass('active');
-    }
-  });
-});

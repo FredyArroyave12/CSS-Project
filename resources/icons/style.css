@@ -1,157 +1,45 @@
 @font-face {
-  font-family: 'et-line';
-  src: url('fonts/et-line.eot');
-  src: url('fonts/et-line.eot?#iefix') format('embedded-opentype'),
-    url('fonts/et-line.woff') format('woff'),
-    url('fonts/et-line.ttf') format('truetype'),
-    url('fonts/et-line.svg#et-line') format('svg');
+  font-family: 'icomoon';
+  src: url('fonts/icomoon.eot?hgqr8o');
+  src: url('fonts/icomoon.eot?hgqr8o#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?hgqr8o') format('truetype'),
+    url('fonts/icomoon.woff?hgqr8o') format('woff'),
+    url('fonts/icomoon.svg?hgqr8o#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 
-/* Use the following CSS code if you want to use data attributes for inserting your icons */
-[data-icon]:before {
-  font-family: 'et-line';
-  content: attr(data-icon);
-  speak: none;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-}
-
-/* Use the following CSS code if you want to have a class per icon */
-/*
-Instead of a list of all class selectors,
-you can use the generic selector below, but it's slower:
-[class*="icon-"] {
-*/
-.icon-mobile,
-.icon-laptop,
-.icon-desktop,
-.icon-tablet,
-.icon-phone,
-.icon-document,
-.icon-documents,
-.icon-search,
-.icon-clipboard,
-.icon-newspaper,
-.icon-notebook,
-.icon-book-open,
-.icon-browser,
-.icon-calendar,
-.icon-presentation,
-.icon-picture,
-.icon-pictures,
-.icon-video,
-.icon-camera,
-.icon-printer,
-.icon-toolbox,
-.icon-briefcase,
-.icon-wallet,
-.icon-gift,
-.icon-bargraph,
-.icon-grid,
-.icon-expand,
-.icon-focus,
-.icon-edit,
-.icon-adjustments,
-.icon-ribbon,
-.icon-hourglass,
-.icon-lock,
-.icon-megaphone,
-.icon-shield,
-.icon-trophy,
-.icon-flag,
-.icon-map,
-.icon-puzzle,
-.icon-basket,
-.icon-envelope,
-.icon-streetsign,
-.icon-telescope,
-.icon-gears,
-.icon-key,
-.icon-paperclip,
-.icon-attachment,
-.icon-pricetags,
-.icon-lightbulb,
-.icon-layers,
-.icon-pencil,
-.icon-tools,
-.icon-tools-2,
-.icon-scissors,
-.icon-paintbrush,
-.icon-magnifying-glass,
-.icon-circle-compass,
-.icon-linegraph,
-.icon-mic,
-.icon-strategy,
-.icon-beaker,
-.icon-caution,
-.icon-recycle,
-.icon-anchor,
-.icon-profile-male,
-.icon-profile-female,
-.icon-bike,
-.icon-wine,
-.icon-hotairballoon,
-.icon-globe,
-.icon-genius,
-.icon-map-pin,
-.icon-dial,
-.icon-chat,
-.icon-heart,
-.icon-cloud,
-.icon-upload,
-.icon-download,
-.icon-target,
-.icon-hazardous,
-.icon-piechart,
-.icon-speedometer,
-.icon-global,
-.icon-compass,
-.icon-lifesaver,
-.icon-clock,
-.icon-aperture,
-.icon-quote,
-.icon-scope,
-.icon-alarmclock,
-.icon-refresh,
-.icon-happy,
-.icon-sad,
-.icon-facebook,
-.icon-twitter,
-.icon-googleplus,
-.icon-rss,
-.icon-tumblr,
-.icon-linkedin,
-.icon-dribbble {
-  font-family: 'et-line';
-  speak: none;
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon';
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+
+  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
 }
+
 .icon-mobile:before {
-  content: '\e000';
+  content: '\e064';
 }
-
+.icon-laptop:before {
+  content: '\e065';
+}
 .icon-desktop:before {
-  content: '\e002';
+  content: '\e066';
 }
 .icon-tablet:before {
-  content: '\e003';
+  content: '\e067';
 }
 .icon-phone:before {
-  content: '\e004';
+  content: '\e068';
 }
 .icon-document:before {
   content: '\e005';
@@ -435,6 +323,27 @@ you can use the generic selector below, but it's slower:
 .icon-linkedin:before {
   content: '\e062';
 }
-.icon-dribbble:before {
+.icon-dribbble4:before {
   content: '\e063';
+}
+.icon-google-plus-2:before {
+  content: '\e903';
+}
+.icon-github-2:before {
+  content: '\e904';
+}
+.icon-behance-2:before {
+  content: '\e905';
+}
+.icon-dribbble-2:before {
+  content: '\e906';
+}
+.icon-twitter-2:before {
+  content: '\e907';
+}
+.icon-facebok-2:before {
+  content: '\e908';
+}
+.icon-chain:before {
+  content: '\e901';
 }
