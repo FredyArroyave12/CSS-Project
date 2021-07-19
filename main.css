@@ -384,7 +384,7 @@ p {
 }
 .team-item:hover > .image-labels {
   z-index: 1;
-  -webkit-animation: enable-labels 1s linear;
+  -webkit-animation: enable-labels 1.3s ease-in;
 }
 .image-icons {
   display: flex;
