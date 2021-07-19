@@ -437,6 +437,8 @@ p {
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 10%;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 .single-portfolio {
   width: 45vh;
