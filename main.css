@@ -167,10 +167,16 @@ p {
 /* navbar */
 .container-header {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
   width: 80%;
   margin: auto;
+}
+.container-header .talos-header {
+  margin: 0;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 .container-header .talos {
   text-decoration: none;
@@ -187,6 +193,7 @@ p {
 .nav-container .nav-menu {
   list-style: none;
   overflow: hidden;
+  margin: 0;
 }
 .container-header .nav-menu {
   display: flex;
@@ -380,34 +387,45 @@ p {
   height: 6em;
   transform: translateY(-10%);
   background: var(--labelColor);
-  z-index: -1;
-}
-.team-item:hover > .image-labels {
+  opacity: 0;
   z-index: 1;
-  -webkit-animation: enable-labels 1.3s ease-in;
+  transition: opacity 1s ease-in-out;
+}
+.team-item:hover .image-labels {
+  opacity: 1;
 }
 .image-icons {
   display: flex;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 2rem;
+  padding-top: 2.5rem;
   padding-bottom: 10rem;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
+
+.image-icons .team-link {
+  text-decoration: none;
+}
+
 .image-icons .team-icon {
   padding-top: 1rem;
   font-size: var(--teamIcon);
   cursor: pointer;
   border-radius: 50%;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   background: var(--black);
   color: var(--white);
-  width: 4rem;
-  height: 4rem;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.image-icons .team-link:nth-child(2) {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.image-icons .team-link:nth-child(3) {
+  margin-right: 10px;
 }
 
 /* END TEAM SECTION */
@@ -505,6 +523,9 @@ p {
   margin-top: 20px;
   font-family: 'et-line', sans-serif;
 }
+.portfolio-text .gallery-link {
+  text-decoration: none;
+}
 .portfolio-text .portfolio-icon {
   outline: none;
   cursor: pointer;
@@ -564,8 +585,7 @@ p {
   width: 100%;
   height: 150%;
   bottom: 25rem;
-  background-size: contain;
-  background-position: center center;
+  background-size: contain, cover;
   z-index: -1;
   display: flex;
   visibility: hidden;
@@ -706,7 +726,7 @@ p {
 }
 .testimonial .title {
   display: inline-block;
-  font-size: var(--subtitle);
+  font-size: var(--responsiveText);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -817,18 +837,20 @@ p {
 .footer {
   display: flex;
   flex-direction: column;
-  padding: 3rem 1.5rem;
+  padding: 2rem 1.5rem;
 }
 
 .footer-message {
   color: var(--subtitleGrey);
-  font-size: 2rem;
+  font-size: var(--text);
   text-align: center;
 }
 
 .footer-icons {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  margin-right: 37%;
+  margin-left: 37%;
 }
 
 .footer-icon {
@@ -838,10 +860,10 @@ p {
   background: var(--black);
   color: var(--white);
   margin: 0.5rem;
-  padding-top: 1.3rem;
+  padding-top: 0.7rem;
   font-size: 1.5rem;
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 .footer-icon:hover,
@@ -885,6 +907,9 @@ p {
 @media screen and (min-width: 576px) and (max-width: 768px) {
   p {
     font-size: var(--responsiveText);
+  }
+  .principal-image {
+    min-height: 70vh;
   }
   .container-header .talos {
     margin-left: 3vh;
@@ -974,10 +999,12 @@ p {
     bottom: 25rem;
   }
   .blog-content-items:nth-child(3) .blog-image {
-    bottom: 27rem;
+    bottom: 24rem;
+    min-height: 20vh;
   }
   .blog-content-items:nth-child(4) .blog-image {
-    bottom: 27rem;
+    bottom: 24rem;
+    min-height: 20vh;
   }
 
   .blog-content-items:first-child {
@@ -991,6 +1018,7 @@ p {
     grid-column: 1/4;
     height: 230px;
   }
+
   .blog-content-items:nth-child(4) {
     grid-column: 4/7;
     height: 230px;
@@ -1061,8 +1089,14 @@ p {
   p {
     font-size: var(--responsiveText);
   }
+  .principal-image {
+    min-height: 65vh;
+  }
   .principal-image .cta-contact {
     display: none;
+  }
+  .container-header {
+    width: 100%;
   }
   .nav-menu {
     position: absolute;
@@ -1084,10 +1118,16 @@ p {
   .nav-item {
     margin: 2.5rem 0;
   }
+  .container-header .talos {
+    position: relative;
+    margin-left: 40px;
+  }
 
   .hamburger {
     display: inline-block;
+    position: relative;
     cursor: pointer;
+    margin-right: 20px;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -1206,9 +1246,6 @@ p {
     padding-right: 0;
   }
 
-  .portfolio-top .portfolio-text-content {
-    margin: 5%;
-  }
   .blog-content-items .blog-image {
     bottom: 28rem;
   }
@@ -1245,7 +1282,7 @@ p {
     font-size: var(--responsiveText);
   }
   .testimonial .title {
-    margin-left: 25%;
+    margin-left: 20%;
     font-size: var(--text);
   }
   .testimonial .picure .testimonial-image {
