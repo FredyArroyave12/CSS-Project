@@ -1110,7 +1110,9 @@ p {
     box-shadow: 0 1rem 2.7rem var(--boxShadow);
     z-index: 10;
   }
-
+  .bar {
+    background-color: var(--hoverAqua);
+  }
   .nav-menu.active {
     left: 0;
   }
